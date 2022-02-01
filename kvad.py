@@ -135,6 +135,20 @@ def prillid():
     plt.grid(True)
     plt.show()
 
+def vihmavari():
+   x1=np.arange()
+   y1=-1/18*x1**2+12
+   x2=np.arange()
+   y2=-1/8*x2**2+6
+   x3=np.arange()
+   y3=-1/8*(x3+8)**2+6
+   x4=np.arange()
+   y4=-1/8*(x4-8)**2+6
+   x5=np.arange()
+   y5=2*(x5+3)**2-9
+   x6=np.arange()
+   y6=1.5*(x6+3)**2-10
+
 def konn(): pass
 def figura():
     global var
@@ -180,10 +194,13 @@ btn_veel.pack()
 var=IntVar()
 r1=Radiobutton(f2,text="Кит",variable=var,value=1, font="Calibri 26",command=figura)#command=kala
 r2=Radiobutton(f2,text="Очки",variable=var,value=2, font="Calibri 26",command=prillid)
-r3=Radiobutton(f2,text="Лягуха",variable=var,value=3, font="Calibri 26",command=figura)
+r3=Radiobutton(f2,text="zont",variable=var,value=3, font="Calibri 26",command=vihmavari)
 r1.pack()
 r2.pack()
 r3.pack()
 
 #a.bind("<Key>",controll(a.get()))
 aken.mainloop()
+
+
+
